@@ -1,0 +1,286 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+These are general Ideas I have to discuss.
+ It is not an attempt to be clear, just to lay out some lines of thinking.
+ Hopefully diagrams will come soon.
+\end_layout
+
+\begin_layout Standard
+It seems as though there are three ways of thinking of division.
+ In terms of doing something to a number (verb), in terms of naming a number
+ (noun), and in terms of limits (noun and verb?).
+ For example, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "partitioning-verb"
+
+\end_inset
+
+we can interpreted 
+\begin_inset Formula $6\div2$
+\end_inset
+
+ as a process of taking six things and partitioning it into two equal pieces
+ and counting the number in each partition.
+ Or, we arrive at the same computation in a different partitioning problem,
+ viz.
+ partitioning so that each partition has two and counting the number of
+ partitions obtained.
+ One specifies the number of partitions and the other specifies the number
+ in each partition
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "multiplying-noun"
+
+\end_inset
+
+we can interperet 
+\begin_inset Formula $6\div2$
+\end_inset
+
+ as the numeral for 'the number which when multiplied by 2 gives 6' or 'the
+ number of two's in 6'.
+ Or, we have a different but equivalent definition in: 'the number that
+ two multiplies by to give 6' or 'the number, two of which, is 6'.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "limit"
+
+\end_inset
+
+we can interpret 
+\begin_inset Formula $6\div2$
+\end_inset
+
+ as 
+\begin_inset Formula $\lim_{x\rightarrow2}\frac{6}{x}$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "partitioning-verb"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "multiplying-noun"
+
+\end_inset
+
+ it turns out that although the pair of definitions given or interpretations
+ are different they give the same 'result' because of commutativity of multiplic
+ation in 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+.
+ More on this in another article.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In my teaching and discussions with many persons in Trinidad and Tobago
+ (I suspect other places as well like Singapore <link to singapore Olevel
+ youtube channel here> and Jamaica) I found that most people have a bias
+ for 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "partitioning-verb"
+
+\end_inset
+
+, probably because it is more concrete than 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "multiplying-noun"
+
+\end_inset
+
+ (Brian Harvey in his sicp lectures talks about ppl having problems with
+ thinking of functions as objects, 'nouns' and why they rather think of
+ them as verbs-is this related?).
+ 
+\end_layout
+
+\begin_layout Standard
+However, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "partitioning-verb"
+
+\end_inset
+
+ is less powerful in handling 
+\begin_inset Formula $6\div0$
+\end_inset
+
+ than 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "multiplying-noun"
+
+\end_inset
+
+ (another article will talk about this).
+ Traditionally 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "limit"
+
+\end_inset
+
+ uses the idea of increasing without bound to handle 
+\begin_inset Formula $6\div0$
+\end_inset
+
+.
+ We usually say 
+\begin_inset Formula $6\div0=\frac{6}{0}=\lim_{x\rightarrow0}\frac{6}{x}=\pm\infty$
+\end_inset
+
+.
+ However this is just notational convenience to describe the idea that dviding
+ by smaller and smaller numbers increases the quotient.
+ It does not really relate to the usual meaning of division in the sense
+ of 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "partitioning-verb"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "multiplying-noun"
+
+\end_inset
+
+: Is 
+\begin_inset Formula $\pm\infty\times0=6$
+\end_inset
+
+? Also Cantor showed that there are many infinities (Prof.
+ Farell would say 
+\begin_inset Quotes eld
+\end_inset
+
+and the one you're thinking of is the smallest
+\begin_inset Quotes erd
+\end_inset
+
+).
+ When we say that 
+\begin_inset Formula $6\div0$
+\end_inset
+
+ is 'infinity' which one might we be speaking of? Following is a dream about
+ these infinities in which 
+\begin_inset Formula $\left(\text{some infinity}\right)\times0=6$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+I got an idea while tinking about the limits: since we have left and right
+ limits, should we take pairs of infinities to represent the division instead
+ of one?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
